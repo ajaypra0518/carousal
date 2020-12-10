@@ -36,8 +36,8 @@ $(document).ready(function(){
 
 
 
-$('#right-arrow').click(previousSlide);
-$('#left-arrow').click(nextSlide);
+$('#left-arrow').click(previousSlide);
+$('#right-arrow').click(nextSlide);
 
 
 $('#sl1,#sl2,#sl3').click(function(){
