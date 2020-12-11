@@ -1,6 +1,7 @@
 var i=0,k=0;
+var interval
 $(document).ready(function(){
-  var interval = setInterval(rotateSlides, 3000); 
+ interval = setInterval(rotateSlides, 3000); 
   function rotateSlides(){
   
 
@@ -65,15 +66,15 @@ function previousSlide(){
   var previousSlide = $('#carousel').find('#imgmain img:last')
   previousSlide.css({marginLeft: -width})
   currentSlide.before(previousSlide);
-  previousSlide.animate({marginLeft: 0}, 700, function(){
-    interval = setInterval(rotateSlides, 3000);
-  });
+  previousSlide.animate({marginLeft: 0}, 700,);
+  interval = setInterval(rotateSlides, 3000);
 }
 
 function nextSlide(){
 clearInterval(interval);
   rotateSlides()
   interval = setInterval(rotateSlides, 3000);
+
 }
 
 });
