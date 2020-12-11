@@ -14,11 +14,13 @@ $(document).ready(function(){
     if(i==1){
       $('#sl2').css('color','#FF1493')
       $('#sl1').css('color','transparent')
+      $('#sl3').css('color','transparent')
       i++;
     }
     if(i==0 && k==0){
       $('#sl1').css('color','#FF1493')
       $('#sl3').css('color','transparent')
+      $('#sl2').css('color','transparent')
       i++;
     }
     k=0;
